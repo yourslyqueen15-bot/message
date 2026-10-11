@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 A Message For You</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            /* This repeats your Canva checkered pattern smoothly as you scroll */
+            background-image: url('background.png');
+            background-size: 250px;
+            background-repeat: repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px; /* Spaces out your 4 letter sections perfectly */
+        }
+
+        /* The stylized message bubbles matching your Canva designs */
+        .card {
+            background-color: #d9d9d9; /* The light grey tone from your images */
+            border-radius: 24px;
+            width: 100%;
+            max-width: 380px; /* Fits beautifully on all iPhone and Android screens */
+            padding: 30px 24px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            color: #1a1a1a;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        /* Special styling for the very first top header bubble */
+        .header-card {
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            margin: 0 0 16px 0;
+        }
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Left-aligned styling specifically for your 14 reminders list */
+        .list-container {
+            text-align: left;
+            padding-left: 10px;
+        }
+        .list-title {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px !important;
+        }
+        .list-item {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .list-number {
+            font-weight: bold;
+            margin-right: 8px;
+            min-width: 24px;
+        }
+
+        /* Floating effect to make it feel extra magical */
+        .fade-in {
+            animation: floatUp 1s ease-out;
+        }
+        @keyframes floatUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BOX 1: HEADER -->
+    <div class="card header-card fade-in">
+        message
+    </div>
+
+    <!-- BOX 2: FIRST MESSAGE -->
+    <div class="card fade-in">
+        <p>this is a little message to tell you that no matter what i will always have your back i will always protect your name</p>
+        <p>i will always have fun with you around i will always have things that will remind me of you</p>
+        <p>i will always love your laugh your personality your face your charisma and quite honestly i could keep going and never stop</p>
+        <p>you have made a long lasting impression on me and hopefully we will continue to make new memories and keep on being friends as we grow older even after grad</p>
+    </div>
+
+    <!-- BOX 3: REMINDERS LIST -->
+    <div class="card fade-in">
+        <p class="list-title">here are things that remind<br>me of you</p>
+        <div class="list-container">
+            <div class="list-item"><span class="list-number">1.</span>the sunrise</div>
+            <div class="list-item"><span class="list-number">2.</span>strawberry cheesecake ice cream</div>
+            <div class="list-item"><span class="list-number">3.</span>periot from freak circus</div>
+            <div class="list-item"><span class="list-number">4.</span>coffee on a sad day</div>
+            <div class="list-item"><span class="list-number">5.</span>the perfect curly hair you have</div>
+            <div class="list-item"><span class="list-number">6.</span>nirvana</div>
+            <div class="list-item"><span class="list-number">7.</span>american sign language</div>
+            <div class="list-item"><span class="list-number">8.</span>a rollerblading rink</div>
+            <div class="list-item"><span class="list-number">9.</span>a black cat with a gold coller</div>
+            <div class="list-item"><span class="list-number">10.</span>a superwoman comic</div>
+            <div class="list-item"><span class="list-number">11.</span>mitski</div>
+            <div class="list-item"><span class="list-number">12.</span>Tanjiro Kamado from demon slayer</div>
+            <div class="list-item"><span class="list-number">13.</span>the rasputin dance</div>
+            <div class="list-item"><span class="list-number">14.</span>Psychology</div>
+        </div>
+    </div>
+
+    <!-- BOX 4: DEEPER FRIENDSHIP MESSAGE -->
+    <div class="card fade-in">
+        <p>even though we are still in the early stages of friendship i want you to know that i trust you alot already which is highly unusual but not surprising</p>
+        <p>from the moment i laid eyes on you i knew i was in for a doosy</p>
+        <p>you understand human emotion at its truest like no other you are so fricking empathetic its crazy</p>
+        <p>you are the purest forms of kindness ive ever seen</p>
+        <p>you have so much charisma and your so so funny and amazing i dont know how anyone could not want to be friends with you or come to school just to see you</p>
+        <p>you liturally put a smile on my face whenever i see you and if i can tell all of that in this short amount of time than i cant wait to see what this friendship leads to</p>
+        <p>i know how to choose my friends and i tell you with utmost certainly that i definitely want this friendship to last</p>
+    </div>
+
+    <!-- BOX 5: CLOSING LETTER -->
+    <div class="card fade-in">
+        <p>your so beautiful that i dont know how to describe your beauty in words and i hope you know that</p>
+        <p>anyways this is the end of this letter and omds this is the first proper coding project after months of learning hope you like it :)</p>
+    </div>
+
+</body>
+</html>
